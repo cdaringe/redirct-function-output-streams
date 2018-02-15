@@ -1,6 +1,6 @@
 # redirect-function-output-streams
 
-redirect all streams on and above a function on the stack.  WAT!
+redirect `stdout` and/or `stderr` streams from within a function call.  WAT!
 
 streams are not primatives of functions--they are primatives of processes. however,
 it is feasible to isolate if stream content is being written within the context of a specific function's stack, and handle it.

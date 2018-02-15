@@ -1,6 +1,6 @@
 {
   "name": "redirect-function-output-streams",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "redirect a function's output streams",
   "main": "src/index.js",
   "repository": "git@github.com:cdaringe/redirct-function-output-streams.git",
