@@ -1,0 +1,41 @@
+{
+  "name": "redirect-function-output-streams",
+  "version": "0.0.1",
+  "description": "redirect a function's output streams",
+  "main": "src/index.js",
+  "repository": "git@github.com:cdaringe/redirct-function-output-streams.git",
+  "author": "cdaringe <christopher.dieringer@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "hook-std": "cdaringe/hook-std#feat/add-original-stream",
+    "trace": "^3.1.0"
+  },
+  "devDependencies": {
+    "ava": "https://github.com/avajs/ava.git",
+    "bluebird": "^3.5.1",
+    "counsel": "^0.5.2",
+    "counsel-ruleset-nodelib": "^0.5.2",
+    "husky": "^0.14.3",
+    "jsdock": "^1.0.4",
+    "memory-stream": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "nsp": "^3.1.0",
+    "nyc": "^11.4.1",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "precommit": "run-p check lint test check-vulnerablities",
+    "check": "counsel check",
+    "check-vulnerablities": "nsp check",
+    "lint": "standard",
+    "test": "nyc --reporter=lcov ava test/**/*.test.js",
+    "docs:clean": "jsdock clean",
+    "docs:build": "jsdock build",
+    "docs:publish": "jsdock publish"
+  },
+  "ava": {
+    "babel": false,
+    "compileEnhancements": false
+  }
+}
