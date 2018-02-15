@@ -1,5 +1,7 @@
 # redirect-function-output-streams
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cdaringe/redirct-function-output-streams.svg)](https://greenkeeper.io/)
+
 redirect `stdout` and/or `stderr` streams from within a function call.  WAT!
 
 streams are not primatives of functions--they are primatives of processes. however,
